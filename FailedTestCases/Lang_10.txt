@@ -1,0 +1,9 @@
+Failing tests: 8
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testParseZone
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLocales_Long_AD
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLANG_831
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testLocales_Short_AD
+  - org.apache.commons.lang3.time.FastDateParserTest::testParseZone
+  - org.apache.commons.lang3.time.FastDateParserTest::testLocales_Long_AD
+  - org.apache.commons.lang3.time.FastDateParserTest::testLANG_831
+  - org.apache.commons.lang3.time.FastDateParserTest::testLocales_Short_AD

@@ -1,0 +1,5 @@
+Failing tests: 4
+  - org.apache.commons.lang3.LocaleUtilsTest::testParseAllLocales
+  - org.apache.commons.lang3.math.NumberUtilsTest::TestLang747
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testParseZone
+  - org.apache.commons.lang3.time.FastDateParserTest::testParseZone

@@ -1,0 +1,6 @@
+Failing tests: 5
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.NodeUtilTest::testValidDefine
+  - com.google.javascript.jscomp.ProcessDefinesTest::testOverridingString1
+  - com.google.javascript.jscomp.ProcessDefinesTest::testOverridingString3

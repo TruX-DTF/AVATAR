@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.apache.commons.math3.fraction.BigFractionTest::testDigitLimitConstructor
+  - org.apache.commons.math3.fraction.FractionTest::testDigitLimitConstructor
+  - org.apache.commons.math3.util.FastMathTest::checkMissingFastMathClasses

@@ -1,0 +1,3 @@
+Failing tests: 2
+  - org.apache.commons.math.stat.clustering.KMeansPlusPlusClustererTest::testSmallDistances
+  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

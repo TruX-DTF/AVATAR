@@ -1,0 +1,8 @@
+Failing tests: 7
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.NormalizeTest::testIssue
+  - com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns1
+  - com.google.javascript.jscomp.VarCheckTest::testPropReferenceInExterns3
+  - com.google.javascript.jscomp.VarCheckTest::testVarReferenceInExterns
+  - com.google.javascript.jscomp.VarCheckTest::testCallInExterns

@@ -1,0 +1,5 @@
+Failing tests: 4
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testCascadedRemovalOfUnlessUnconditonalJumps
+  - com.google.javascript.jscomp.UnreachableCodeEliminationTest::testIssue311

@@ -1,0 +1,5 @@
+Failing tests: 4
+  - org.apache.commons.lang.ClassUtilsTest::test_getShortClassName_Class
+  - org.apache.commons.lang.ClassUtilsTest::test_getPackageName_Class
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testExtendedAndBuiltInFormats
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testBuiltInNumberFormat

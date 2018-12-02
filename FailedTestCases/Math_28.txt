@@ -1,0 +1,3 @@
+Failing tests: 2
+  - org.apache.commons.math3.optimization.linear.SimplexSolverTest::testMath828Cycle
+  - org.apache.commons.math3.util.FastMathTest::checkMissingFastMathClasses

@@ -1,0 +1,6 @@
+Failing tests: 5
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue537a
+  - com.google.javascript.jscomp.TypeCheckTest::testIssue537b
+  - com.google.javascript.jscomp.TypedScopeCreatorTest::testPropertyOnUnknownSuperClass2

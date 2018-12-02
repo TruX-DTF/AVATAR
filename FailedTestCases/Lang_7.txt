@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.apache.commons.lang3.math.NumberUtilsTest::testCreateNumber
+  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testParseZone
+  - org.apache.commons.lang3.time.FastDateParserTest::testParseZone

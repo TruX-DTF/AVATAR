@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage
+  - org.apache.commons.lang.text.StrBuilderTest::testIndexOfLang294
+  - org.apache.commons.lang.text.StrBuilderTest::testLang294

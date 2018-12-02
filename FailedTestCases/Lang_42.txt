@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.apache.commons.lang.StringEscapeUtilsTest::testEscapeHtmlHighUnicode
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testExtendedAndBuiltInFormats
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testBuiltInNumberFormat

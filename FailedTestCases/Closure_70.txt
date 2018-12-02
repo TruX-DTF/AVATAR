@@ -1,0 +1,15 @@
+Failing tests: 14
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject1
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject2
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject7
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject8
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject9
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject10
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject12
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testDuplicateLocalVarDecl
+  - com.google.javascript.jscomp.LooseTypeCheckTest::testFunctionArguments13
+  - com.google.javascript.jscomp.TypeCheckTest::testScoping12
+  - com.google.javascript.jscomp.TypeCheckTest::testDuplicateLocalVarDecl
+  - com.google.javascript.jscomp.TypeCheckTest::testFunctionArguments13

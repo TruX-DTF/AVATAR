@@ -1,0 +1,3 @@
+Failing tests: 2
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.rhino.jstype.UnionTypeTest::testGreatestSubtypeUnionTypes5

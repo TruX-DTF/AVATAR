@@ -1,0 +1,4 @@
+Failing tests: 3
+  - org.apache.commons.lang.WordUtilsTest::testAbbreviate
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testExtendedAndBuiltInFormats
+  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testBuiltInNumberFormat

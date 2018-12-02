@@ -1,0 +1,3 @@
+Failing tests: 2
+  - com.google.javascript.jscomp.CompilerRunnerTest::testIssue115
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods

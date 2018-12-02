@@ -1,0 +1,3 @@
+Failing tests: 2
+  - org.apache.commons.math.dfp.DfpTest::testIssue567
+  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

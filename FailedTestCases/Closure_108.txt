@@ -1,0 +1,4 @@
+Failing tests: 3
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.ScopedAliasesTest::testIssue1144

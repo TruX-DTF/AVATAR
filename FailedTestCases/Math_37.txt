@@ -1,0 +1,6 @@
+Failing tests: 5
+  - org.apache.commons.math.complex.ComplexTest::testTanhInf
+  - org.apache.commons.math.complex.ComplexTest::testTan
+  - org.apache.commons.math.complex.ComplexTest::testTanh
+  - org.apache.commons.math.complex.ComplexTest::testTanInf
+  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

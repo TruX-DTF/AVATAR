@@ -1,0 +1,3 @@
+Failing tests: 2
+  - org.apache.commons.math.geometry.euclidean.threed.RotationTest::testIssue639
+  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

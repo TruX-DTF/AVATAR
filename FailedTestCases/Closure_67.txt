@@ -1,0 +1,11 @@
+Failing tests: 10
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
+  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject1
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject2
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject7
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject8
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject9
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject10
+  - com.google.javascript.jscomp.InlineObjectLiteralsTest::testObject12
+  - com.google.javascript.jscomp.RemoveUnusedPrototypePropertiesTest::testAliasing7
