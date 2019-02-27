@@ -53,6 +53,7 @@ public class Avatar extends AbstractFixer {
 		// Read paths of the buggy project.
 		if (!dp.validPaths) return;
 		
+		// Localize suspicious code positions.
 		// Read suspicious positions.
 		List<SuspiciousPosition> suspiciousCodeList = readSuspiciousCodeFromFile();
 		if (suspiciousCodeList == null) return;

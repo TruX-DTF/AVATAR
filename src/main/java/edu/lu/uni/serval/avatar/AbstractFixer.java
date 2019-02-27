@@ -138,6 +138,7 @@ public abstract class AbstractFixer implements IFixer {
 		List<SuspiciousPosition> suspiciousCodeList = new ArrayList<>();
 		
 		if (!suspiciousFile.exists()) {
+			// Localize suspicious code positions.
 			FL fl = new FL();
 			fl.dp = this.dp;
 			fl.locateSuspiciousCode(Configuration.BUGGY_PROJECTS_PATH, this.buggyProject, suspiciousFilePath + "/", this.metric);

@@ -22,9 +22,9 @@ public class Main_Pos {
 	private static Granularity granularity = Granularity.Method;
 	
 	enum Granularity {
-		Line,
-		Method,
-		File
+		Line,   // It means that the bug position at line level is known.
+		Method, // It means that the bug position at method level is known.
+		File    // It means that the bug position at file level is known.
 	}
 
 	public static void main(String[] args) {
