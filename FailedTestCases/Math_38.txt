@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.math.optimization.direct.BOBYQAOptimizerTest::testConstrainedRosenWithMoreInterpolationPoints
-  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

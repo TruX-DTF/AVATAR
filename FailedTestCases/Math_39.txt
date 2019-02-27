@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.math.ode.nonstiff.DormandPrince853IntegratorTest::testTooLargeFirstStep
-  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

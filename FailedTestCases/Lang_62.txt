@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.lang.EntitiesTest::testNumberOverflow
-  - org.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage

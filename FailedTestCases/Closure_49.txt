@@ -1,6 +1,4 @@
-Failing tests: 68
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+Failing tests: 66
   - com.google.javascript.jscomp.FunctionInjectorTest::testInline19b
   - com.google.javascript.jscomp.FunctionInjectorTest::testInlineIntoLoop
   - com.google.javascript.jscomp.FunctionInjectorTest::testInline13

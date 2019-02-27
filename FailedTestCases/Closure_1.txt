@@ -1,9 +1,7 @@
-Failing tests: 10
+Failing tests: 8
   - com.google.javascript.jscomp.CommandLineRunnerTest::testSimpleModeLeavesUnusedParams
   - com.google.javascript.jscomp.CommandLineRunnerTest::testForwardDeclareDroppedTypes
   - com.google.javascript.jscomp.CommandLineRunnerTest::testDebugFlag1
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
   - com.google.javascript.jscomp.IntegrationTest::testIssue787
   - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal1
   - com.google.javascript.jscomp.RemoveUnusedVarsTest::testRemoveGlobal2

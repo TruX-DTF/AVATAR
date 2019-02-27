@@ -1,3 +1,2 @@
-Failing tests: 2
-  - org.apache.commons.lang.LocaleUtilsTest::testCountriesByLanguage
+Failing tests: 1
   - org.apache.commons.lang.time.DateUtilsTest::testTruncateLang59

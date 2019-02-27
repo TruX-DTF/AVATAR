@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.math.analysis.solvers.RegulaFalsiSolverTest::testIssue631
-  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

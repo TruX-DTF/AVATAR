@@ -1,6 +1,4 @@
-Failing tests: 10
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+Failing tests: 8
   - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101a
   - com.google.javascript.jscomp.FunctionInjectorTest::testIssue1101b
   - com.google.javascript.jscomp.InlineFunctionsTest::testBug4944818

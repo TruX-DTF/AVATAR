@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - com.google.javascript.jscomp.CommandLineRunnerTest::testProcessClosurePrimitives
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods

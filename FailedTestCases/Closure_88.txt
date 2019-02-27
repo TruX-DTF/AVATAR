@@ -1,7 +1,5 @@
-Failing tests: 9
+Failing tests: 7
   - com.google.javascript.jscomp.CommandLineRunnerTest::testIssue297
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
   - com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297a
   - com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297b
   - com.google.javascript.jscomp.DeadAssignmentsEliminationTest::testIssue297c

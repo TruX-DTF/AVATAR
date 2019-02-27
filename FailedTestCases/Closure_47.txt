@@ -1,4 +1,4 @@
-Failing tests: 18
+Failing tests: 16
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testParseSourceMetaMap
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput0a
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testMultilineMapping
@@ -15,5 +15,3 @@ Failing tests: 18
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput3
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput4
   - com.google.debugging.sourcemap.SourceMapGeneratorV3Test::testGoldenOutput5
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3

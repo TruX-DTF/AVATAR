@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.math3.optimization.direct.CMAESOptimizerTest::testMath864
-  - org.apache.commons.math3.util.FastMathTest::checkMissingFastMathClasses

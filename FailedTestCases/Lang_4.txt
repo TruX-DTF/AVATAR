@@ -1,4 +1,2 @@
-Failing tests: 3
+Failing tests: 1
   - org.apache.commons.lang3.text.translate.LookupTranslatorTest::testLang882
-  - org.apache.commons.lang3.time.FastDateFormat_ParserTest::testParseZone
-  - org.apache.commons.lang3.time.FastDateParserTest::testParseZone

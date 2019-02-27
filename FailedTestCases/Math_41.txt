@@ -1,3 +1,2 @@
-Failing tests: 2
+Failing tests: 1
   - org.apache.commons.math.stat.descriptive.moment.VarianceTest::testEvaluateArraySegmentWeighted
-  - org.apache.commons.math.util.FastMathTest::checkMissingFastMathClasses

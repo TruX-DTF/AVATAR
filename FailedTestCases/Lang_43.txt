@@ -1,4 +1,2 @@
-Failing tests: 3
+Failing tests: 1
   - org.apache.commons.lang.text.ExtendedMessageFormatTest::testEscapedQuote_LANG_477
-  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testExtendedAndBuiltInFormats
-  - org.apache.commons.lang.text.ExtendedMessageFormatTest::testBuiltInNumberFormat

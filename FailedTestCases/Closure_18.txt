@@ -1,4 +1,2 @@
-Failing tests: 3
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testTwoMethods
-  - com.google.javascript.jscomp.CrossModuleMethodMotionTest::testClosureVariableReads3
+Failing tests: 1
   - com.google.javascript.jscomp.IntegrationTest::testDependencySorting
