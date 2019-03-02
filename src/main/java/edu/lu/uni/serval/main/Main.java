@@ -33,7 +33,7 @@ public class Main {
 	public static void fixBug(String buggyProjectsPath, String defects4jPath, String buggyProjectName) {
 		String suspiciousFileStr = Configuration.suspPositionsFilePath;
 		
-		String dataType = "StaticBugFixer";
+		String dataType = "AVATAR";
 		String[] elements = buggyProjectName.split("_");
 		String projectName = elements[0];
 		int bugId;

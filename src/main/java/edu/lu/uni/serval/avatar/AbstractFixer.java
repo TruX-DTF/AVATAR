@@ -141,7 +141,7 @@ public abstract class AbstractFixer implements IFixer {
 			// Localize suspicious code positions.
 			FL fl = new FL();
 			fl.dp = this.dp;
-			fl.locateSuspiciousCode(Configuration.BUGGY_PROJECTS_PATH, this.buggyProject, suspiciousFilePath + "/", this.metric);
+			fl.locateSuspiciousCode(this.path, this.buggyProject, suspiciousFilePath + "/", this.metric);
 			
 			List<SuspiciousCode> suspStmts = fl.suspStmts;
 			for (int index = 0, size = suspStmts.size(); index < size; index ++) {
@@ -288,7 +288,6 @@ public abstract class AbstractFixer implements IFixer {
 			List<String> failedTestsAfterFix = new ArrayList<>();
 			int errorTestAfterFix = TestUtils.getFailTestNumInProject(fullBuggyProjectPath, this.defects4jPath,
 					failedTestsAfterFix);
-			System.out.println();
 			failedTestsAfterFix.removeAll(this.fakeFailedTestCasesList);
 			
 			if (errorTestAfterFix < minErrorTest) {
@@ -311,7 +310,7 @@ public abstract class AbstractFixer implements IFixer {
 								+ "\n//**********************************************************\n"
 								+ "===Buggy Code===\n" + buggyCode + "\n\n===Patch Code===\n" + patchCode, false);
 					} else {
-						FileHelper.outputToFile(Configuration.outputPath + "FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr, false);
+						FileHelper.outputToFile(Configuration.outputPath + "FixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
 					}
 					this.minErrorTest = 0;
 					break;
@@ -327,7 +326,7 @@ public abstract class AbstractFixer implements IFixer {
 									+ "\n//**********************************************************\n"
 									+ "===Buggy Code===\n" + buggyCode + "\n\n===Patch Code===\n" + patchCode, false);
 						} else {
-							FileHelper.outputToFile(Configuration.outputPath + "PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr, false);
+							FileHelper.outputToFile(Configuration.outputPath + "PartiallyFixedBugs/" + buggyProject + "/Patch_" + patchId + ".txt", patchStr + "\n", false);
 						}
 					}
 				}
