@@ -15,16 +15,14 @@ import edu.lu.uni.serval.config.Configuration;
 public class Main {
 	
 	public static void main(String[] args) {
-		if (args.length != 6) {
-			System.out.println("Arguments: <Failed_Test_Cases_File_Path> <Suspicious_Code_Positions_File_Path> <Buggy_Project_Path> <defects4j_Path> <Project_Name> <FL_Metric>");
+		if (args.length != 4) {
+			System.out.println("Arguments: <Buggy_Project_Path> <defects4j_Path> <Bug_ID> <FL_Metric>");
 			System.exit(0);
 		}
-		Configuration.failedTestCasesFilePath = args[0];
-		Configuration.suspPositionsFilePath = args[1];
-		String buggyProjectsPath = args[2];// "../Defects4JData/"
-		String defects4jPath = args[3]; // "../defects4j/"
-		String projectName = args[4]; // "Chart_1"
-		Configuration.faultLocalizationMetric = args[5];
+		String buggyProjectsPath = args[0];// "../Defects4JData/"
+		String defects4jPath = args[1]; // "../defects4j/"
+		String projectName = args[2]; // "Chart_1"
+		Configuration.faultLocalizationMetric = args[3];
 		Configuration.outputPath += "FL/";
 		System.out.println(projectName);
 		fixBug(buggyProjectsPath, defects4jPath, projectName);

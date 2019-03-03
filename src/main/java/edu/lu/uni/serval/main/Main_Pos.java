@@ -28,18 +28,17 @@ public class Main_Pos {
 	}
 
 	public static void main(String[] args) {
-		if (args.length != 7) {
-			System.out.println("Arguments: <Failed_Test_Cases_File_Path> <Known_Bug_Positions_File> <Buggy_Project_Path> <defects4j_Path> <Project_Name> <Suspicious_Code_Positions_File_Path> <Line/Method/File>");
+		if (args.length != 5) {
+			System.out.println("Arguments: <Buggy_Project_Path> <defects4j_Path> <Bug_ID> <FL_Metric> <Line/Method>");
 			System.exit(0);
 		}
-		Configuration.failedTestCasesFilePath = args[0];
-		Configuration.knownBugPositions = args[1];
-		String buggyProjectsPath = args[2];// "../Defects4JData/"
-		String defects4jPath = args[3]; // "../defects4j/"
-		String projectName = args[4]; // "Chart_1"
+		String buggyProjectsPath = args[0];// "../Defects4JData/"
+		String defects4jPath = args[1]; // "../defects4j/"
+		String projectName = args[2]; // "Chart_1"
+		Configuration.faultLocalizationMetric = args[3];
+		String granularityStr = args[4];
+		
 		System.out.println(projectName);
-		Configuration.suspPositionsFilePath = args[5];
-		String granularityStr = args[6];
 		if ("line".equalsIgnoreCase(granularityStr) || "l".equalsIgnoreCase(granularityStr)) {
 			granularity = Granularity.Line;
 			Configuration.outputPath += "Line/";
@@ -50,7 +49,7 @@ public class Main_Pos {
 //			granularity = Granularity.File;
 //			Configuration.outputPath += "File/";
 		} else {
-			System.out.println("Last argument must be l, L, line, Line, m, M, method, Method, f, F, file, or File.");
+			System.out.println("Last argument must be l, L, line, Line, m, M, method, or Method.");
 			System.exit(0);
 		}
 		fixBug(buggyProjectsPath, defects4jPath, projectName);
