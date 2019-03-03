@@ -3,7 +3,7 @@ Static Analysis Violation Fix Pattern based Automated Program Repair
 
 AVATAR leverages the fix patterns of static analysis violations to fix semantic bugs.
 
-![The overview bug fixing process with AVATAR.\label{step}](./figure/overview.pdf)
+![The overview bug fixing process with AVATAR.\label{step}](./figure/overview.png)
 
 
 This document describes how to use this tool and how to reproduce the result of our paper below. Please cite the following paper if you utilize the tool.
