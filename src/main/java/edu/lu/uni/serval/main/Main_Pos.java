@@ -46,9 +46,9 @@ public class Main_Pos {
 		} else if ("method".equalsIgnoreCase(granularityStr) || "m".equalsIgnoreCase(granularityStr)) {
 			granularity = Granularity.Method;
 			Configuration.outputPath += "Method/";
-		} else if ("file".equalsIgnoreCase(granularityStr) || "f".equalsIgnoreCase(granularityStr)) {
-			granularity = Granularity.File;
-			Configuration.outputPath += "File/";
+//		} else if ("file".equalsIgnoreCase(granularityStr) || "f".equalsIgnoreCase(granularityStr)) {
+//			granularity = Granularity.File;
+//			Configuration.outputPath += "File/";
 		} else {
 			System.out.println("Last argument must be l, L, line, Line, m, M, method, Method, f, F, file, or File.");
 			System.exit(0);
@@ -57,7 +57,7 @@ public class Main_Pos {
 	}
 
 	public static void fixBug(String buggyProjectsPath, String defects4jPath, String buggyProjectName) {
-		String dataType = "avatar";
+		String dataType = "AVATAR";
 		String[] elements = buggyProjectName.split("_");
 		String projectName = elements[0];
 		int bugId;

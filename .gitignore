@@ -5,8 +5,6 @@
 .settings
 logs
 target
-dataset/
-OUTPUT/
 *.class
 *.list
 *.csv
@@ -15,9 +13,6 @@ OUTPUT/
 .mtj/
 .tmp/
 .temp/
-log
-
-src/main/java/edu/lu/uni/Test.java
 
 # Package Files #
 *.war

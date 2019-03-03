@@ -1,0 +1,16 @@
+diff --git a/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java b/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
+index 26a56a7..25ea346 100644
+--- a/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
++++ b/src/com/google/javascript/jscomp/parsing/JsDocInfoParser.java
+@@ -804,7 +804,10 @@ public final class JsDocInfoParser {
+                       typeNode.putBooleanProp(Node.BRACELESS_TYPE, true);
+                     }
+                   }
+-                  type = createJSTypeExpression(typeNode);
++                  if (typeNode == null) {
++    return false;
++}
++type = createJSTypeExpression(typeNode);
+ 
+                   if (type == null) {
+                     // error reported during recursive descent

@@ -1,0 +1,16 @@
+diff --git a/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java b/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java
+index 04488e5..8fc98f3 100644
+--- a/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java
++++ b/src/main/java/org/apache/commons/math3/linear/RectangularCholeskyDecomposition.java
+@@ -76,7 +76,10 @@ public class RectangularCholeskyDecomposition {
+         for (boolean loop = true; loop;) {
+ 
+             // find maximal diagonal element
+-            swap[r] = r;
++            if (swap == null) {
++    throw new IllegalArgumentException("Null 'swap' argument.");
++}
++swap[r] = r;
+             for (int i = r + 1; i < order; ++i) {
+                 int ii  = index[i];
+                 int isi = index[swap[i]];

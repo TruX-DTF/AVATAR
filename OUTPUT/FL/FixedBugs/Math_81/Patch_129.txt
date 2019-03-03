@@ -1,0 +1,13 @@
+diff --git a/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+index 2d0d72f..1bb5637 100644
+--- a/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
++++ b/src/main/java/org/apache/commons/math/linear/EigenDecompositionImpl.java
+@@ -1530,7 +1530,7 @@ public class EigenDecompositionImpl implements EigenDecomposition {
+                 double s = 0.25 * dMin;
+ 
+                 // compute contribution to norm squared from i > nn-2.
+-                final int np = nn - 2 * pingPong;
++                final int np = nn - 2 * start;
+                 double b1 = work[np - 2];
+                 double b2 = work[np - 6];
+                 final double gam = dN2;

@@ -21,7 +21,6 @@ import com.gzoltar.core.components.Statement;
 import com.gzoltar.core.instr.testing.TestResult;
 
 import edu.lu.uni.serval.faultlocalization.Metrics.Metric;
-import edu.lu.uni.serval.utils.FileHelper;
 
 /**
  * GZoltar Fault Localization.
@@ -62,7 +61,7 @@ public class GZoltarFaultLoclaization {
 //                b.append(url.toExternalForm()).append("\n");
 //            }
         }
-        FileHelper.outputToFile("log/classPaths.txt", b, false);
+//        FileHelper.outputToFile("logs/classPaths.txt", b, false);
         b.setLength(0);
         
         try {
@@ -95,7 +94,7 @@ public class GZoltarFaultLoclaization {
 	            b.append(className).append("\n");
 	        }
 	        
-	        FileHelper.outputToFile("log/testCases.txt", b, false);
+//	        FileHelper.outputToFile("logs/testCases.txt", b, false);
 	        b.setLength(0);
 	        
 	        gzoltar.run();

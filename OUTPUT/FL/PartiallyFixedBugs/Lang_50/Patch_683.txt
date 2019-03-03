@@ -1,0 +1,13 @@
+diff --git a/src/java/org/apache/commons/lang/time/FastDateFormat.java b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+index 8a26f28..f0b82ec 100644
+--- a/src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -476,7 +476,7 @@ public class FastDateFormat extends Format {
+                         locale);
+                 String pattern = formatter.toPattern();
+                 format = getInstance(pattern, timeZone, locale);
+-                cDateTimeInstanceCache.put(key, format);
++                cDateTimeInstanceCache.put(dateStyle, format);
+ 
+             } catch (ClassCastException ex) {
+                 throw new IllegalArgumentException("No date time pattern for locale: " + locale);

@@ -1,0 +1,13 @@
+diff --git a/src/java/org/apache/commons/lang/time/FastDateFormat.java b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+index 8a26f28..6950e6a 100644
+--- a/src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -1728,7 +1728,7 @@ public class FastDateFormat extends Format {
+                 (mObj1 == null ?
+                  key.mObj1 == null : mObj1.equals(key.mObj1)) &&
+                 (mObj2 == null ?
+-                 key.mObj2 == null : mObj2.equals(key.mObj2));
++                 key.mObj2 == null : key.equals(key.mObj2));
+         }
+ 
+         /**

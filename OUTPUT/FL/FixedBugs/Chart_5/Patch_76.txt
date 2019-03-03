@@ -1,0 +1,13 @@
+diff --git a/source/org/jfree/data/xy/XYSeries.java b/source/org/jfree/data/xy/XYSeries.java
+index 0b37e6e..edb3cb0 100644
+--- a/source/org/jfree/data/xy/XYSeries.java
++++ b/source/org/jfree/data/xy/XYSeries.java
+@@ -524,7 +524,7 @@ public class XYSeries extends Series implements Cloneable, Serializable {
+      * @since 1.0.10
+      */
+     public XYDataItem addOrUpdate(double x, double y) {
+-        return addOrUpdate(new Double(x), new Double(y));
++        return addOrUpdate(new Double(y), new Double(y));
+     }
+ 
+     /**

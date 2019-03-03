@@ -1,0 +1,32 @@
+diff --git a/src/main/java/org/joda/time/DateTimeUtils.java b/src/main/java/org/joda/time/DateTimeUtils.java
+index 900060b..1f4b936 100644
+--- a/src/main/java/org/joda/time/DateTimeUtils.java
++++ b/src/main/java/org/joda/time/DateTimeUtils.java
+@@ -348,26 +348,7 @@ public class DateTimeUtils {
+     }
+ 
+     //-----------------------------------------------------------------------
+-    /**
+-     * Gets the {@link DateFormatSymbols} based on the given locale.
+-     * <p>
+-     * If JDK 6 or newer is being used, DateFormatSymbols.getInstance(locale) will
+-     * be used in order to allow the use of locales defined as extensions.
+-     * Otherwise, new DateFormatSymbols(locale) will be used.
+-     * See JDK 6 {@link DateFormatSymbols} for further information.
+-     * 
+-     * @param locale  the {@link Locale} used to get the correct {@link DateFormatSymbols}
+-     * @return the symbols
+-     * @since 2.0
+-     */
+-    public static final DateFormatSymbols getDateFormatSymbols(Locale locale) {
+-        try {        	
+-        	Method method = DateFormatSymbols.class.getMethod("getInstance", new Class[] {Locale.class});        	
+-        	return (DateFormatSymbols) method.invoke(null, new Object[] {locale});        	
+-        } catch (Exception ex) {
+-        	return new DateFormatSymbols(locale);
+-        } 
+-    }
++    
+ 
+     //-----------------------------------------------------------------------
+     /**

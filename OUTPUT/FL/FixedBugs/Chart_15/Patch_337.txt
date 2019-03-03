@@ -1,0 +1,16 @@
+diff --git a/source/org/jfree/chart/plot/PiePlot3D.java b/source/org/jfree/chart/plot/PiePlot3D.java
+index e8fbaf2..24e39c1 100644
+--- a/source/org/jfree/chart/plot/PiePlot3D.java
++++ b/source/org/jfree/chart/plot/PiePlot3D.java
+@@ -277,7 +277,10 @@ public class PiePlot3D extends PiePlot implements Serializable {
+             linkH = 2 * min;
+         }
+         
+-        PiePlotState state = initialise(g2, plotArea, this, null, info);
++        if (info == null) {
++    return;
++}
++PiePlotState state = initialise(g2, plotArea, this, null, info);
+ 
+         // the link area defines the dog leg points for the linking lines to 
+         // the labels

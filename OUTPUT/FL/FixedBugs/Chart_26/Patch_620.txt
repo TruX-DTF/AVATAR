@@ -1,0 +1,63 @@
+diff --git a/source/org/jfree/chart/plot/CategoryPlot.java b/source/org/jfree/chart/plot/CategoryPlot.java
+index 929de4c..6df59b4 100644
+--- a/source/org/jfree/chart/plot/CategoryPlot.java
++++ b/source/org/jfree/chart/plot/CategoryPlot.java
+@@ -2704,58 +2704,7 @@ public class CategoryPlot extends Plot
+         // draw the top axes
+         double cursor = dataArea.getMinY() - this.axisOffset.calculateTopOutset(
+                 dataArea.getHeight());
+-        Iterator iterator = axisCollection.getAxesAtTop().iterator();
+-        while (iterator.hasNext()) {
+-            Axis axis = (Axis) iterator.next();
+-            if (axis != null) {
+-                AxisState axisState = axis.draw(g2, cursor, plotArea, dataArea, 
+-                        RectangleEdge.TOP, plotState);
+-                cursor = axisState.getCursor();
+-                axisStateMap.put(axis, axisState);
+-            }
+-        }
+-
+-        // draw the bottom axes
+-        cursor = dataArea.getMaxY() 
+-                 + this.axisOffset.calculateBottomOutset(dataArea.getHeight());
+-        iterator = axisCollection.getAxesAtBottom().iterator();
+-        while (iterator.hasNext()) {
+-            Axis axis = (Axis) iterator.next();
+-            if (axis != null) {
+-                AxisState axisState = axis.draw(g2, cursor, plotArea, dataArea,
+-                        RectangleEdge.BOTTOM, plotState);
+-                cursor = axisState.getCursor();
+-                axisStateMap.put(axis, axisState);
+-            }
+-        }
+-
+-        // draw the left axes
+-        cursor = dataArea.getMinX() 
+-                 - this.axisOffset.calculateLeftOutset(dataArea.getWidth());
+-        iterator = axisCollection.getAxesAtLeft().iterator();
+-        while (iterator.hasNext()) {
+-            Axis axis = (Axis) iterator.next();
+-            if (axis != null) {
+-                AxisState axisState = axis.draw(g2, cursor, plotArea, dataArea,
+-                        RectangleEdge.LEFT, plotState);
+-                cursor = axisState.getCursor();
+-                axisStateMap.put(axis, axisState);
+-            }
+-        }
+-
+-        // draw the right axes
+-        cursor = dataArea.getMaxX() 
+-                 + this.axisOffset.calculateRightOutset(dataArea.getWidth());
+-        iterator = axisCollection.getAxesAtRight().iterator();
+-        while (iterator.hasNext()) {
+-            Axis axis = (Axis) iterator.next();
+-            if (axis != null) {
+-                AxisState axisState = axis.draw(g2, cursor, plotArea, dataArea, 
+-                        RectangleEdge.RIGHT, plotState);
+-                cursor = axisState.getCursor();
+-                axisStateMap.put(axis, axisState);
+-            }
+-        }
++        
+         
+         return axisStateMap;

@@ -1,0 +1,20 @@
+diff --git a/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java b/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+index ab65ba3..6956414 100644
+--- a/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
++++ b/source/org/jfree/chart/renderer/category/StatisticalBarRenderer.java
+@@ -204,14 +204,7 @@ public class StatisticalBarRenderer extends BarRenderer
+         StatisticalCategoryDataset statData = (StatisticalCategoryDataset) data;
+ 
+         PlotOrientation orientation = plot.getOrientation();
+-        if (orientation == PlotOrientation.HORIZONTAL) {
+-            drawHorizontalItem(g2, state, dataArea, plot, domainAxis, 
+-                    rangeAxis, statData, row, column);
+-        }
+-        else if (orientation == PlotOrientation.VERTICAL) {
+-            drawVerticalItem(g2, state, dataArea, plot, domainAxis, rangeAxis, 
+-                    statData, row, column);
+-        }
++        
+     }
+                 
+     /**

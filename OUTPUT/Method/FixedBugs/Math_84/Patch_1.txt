@@ -1,0 +1,24 @@
+diff --git a/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java b/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java
+index 42a4d9d..d83217c 100644
+--- a/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java
++++ b/src/main/java/org/apache/commons/math/optimization/direct/MultiDirectional.java
+@@ -61,9 +61,7 @@ public class MultiDirectional extends DirectSearchOptimizer {
+     protected void iterateSimplex(final Comparator<RealPointValuePair> comparator)
+         throws FunctionEvaluationException, OptimizationException, IllegalArgumentException {
+ 
+-        while (true) {
+-
+-            incrementIterationsCounter();
++        incrementIterationsCounter();
+ 
+             // save the original vertex
+             final RealPointValuePair[] original = simplex;
+@@ -94,8 +92,6 @@ public class MultiDirectional extends DirectSearchOptimizer {
+                 return;
+             }
+ 
+-        }
+-
+     }
+ 
+     /** Compute and evaluate a new simplex.

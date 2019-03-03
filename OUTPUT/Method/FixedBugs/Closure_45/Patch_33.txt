@@ -1,0 +1,16 @@
+diff --git a/src/com/google/javascript/jscomp/RemoveUnusedVars.java b/src/com/google/javascript/jscomp/RemoveUnusedVars.java
+index be72a58..6b5e0a1 100644
+--- a/src/com/google/javascript/jscomp/RemoveUnusedVars.java
++++ b/src/com/google/javascript/jscomp/RemoveUnusedVars.java
+@@ -732,10 +732,7 @@ class RemoveUnusedVars
+           for (Assign assign : assignsByVar.get(var)) {
+             if (assign.isPropertyAssign) {
+               hasPropertyAssign = true;
+-            } else if (!NodeUtil.isLiteralValue(
+-                assign.assignNode.getLastChild(), true)) {
+-              assignedToUnknownValue = true;
+-            }
++            } else assignedToUnknownValue = true;
+           }
+ 
+           if (assignedToUnknownValue && hasPropertyAssign) {

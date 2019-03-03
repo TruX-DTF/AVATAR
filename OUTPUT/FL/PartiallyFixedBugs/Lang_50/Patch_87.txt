@@ -1,0 +1,20 @@
+diff --git a/src/java/org/apache/commons/lang/time/FastDateFormat.java b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+index 8a26f28..ee8fe8c 100644
+--- a/src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -1731,14 +1731,7 @@ public class FastDateFormat extends Format {
+                  key.mObj2 == null : mObj2.equals(key.mObj2));
+         }
+ 
+-        /**
+-         * {@inheritDoc}
+-         */
+-        public int hashCode() {
+-            return
+-                (mObj1 == null ? 0 : mObj1.hashCode()) +
+-                (mObj2 == null ? 0 : mObj2.hashCode());
+-        }
++        
+ 
+         /**
+          * {@inheritDoc}

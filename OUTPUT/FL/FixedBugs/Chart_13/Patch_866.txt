@@ -1,0 +1,20 @@
+diff --git a/source/org/jfree/chart/block/BorderArrangement.java b/source/org/jfree/chart/block/BorderArrangement.java
+index 730aeb3..1efcc79 100644
+--- a/source/org/jfree/chart/block/BorderArrangement.java
++++ b/source/org/jfree/chart/block/BorderArrangement.java
+@@ -450,14 +450,7 @@ public class BorderArrangement implements Arrangement, Serializable {
+             w[2] = size.width;
+         }
+         h[3] = h[2];
+-        if (this.rightBlock != null) {
+-            RectangleConstraint c4 = new RectangleConstraint(0.0,
+-                    new Range(0.0, constraint.getWidth() - w[2]),
+-                    LengthConstraintType.RANGE, h[2], null,
+-                    LengthConstraintType.FIXED);
+-            Size2D size = this.rightBlock.arrange(g2, c4);
+-            w[3] = size.width;
+-        }
++        
+         h[4] = h[2];
+         w[4] = constraint.getWidth() - w[3] - w[2];
+         RectangleConstraint c5 = new RectangleConstraint(w[4], h[4]);

@@ -1,0 +1,12 @@
+diff --git a/src/java/org/apache/commons/lang/time/FastDateFormat.java b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+index 8a26f28..d32d1a1 100644
+--- a/src/java/org/apache/commons/lang/time/FastDateFormat.java
++++ b/src/java/org/apache/commons/lang/time/FastDateFormat.java
+@@ -1718,7 +1718,7 @@ public class FastDateFormat extends Format {
+                 return true;
+             }
+ 
+-            if (!(obj instanceof Pair)) {
++            if (!(this.mObj2 instanceof Pair)) {
+                 return false;
+             }
